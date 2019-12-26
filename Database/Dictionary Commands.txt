@@ -1,0 +1,23 @@
+D_ID	D_ID_NAME	D_TYPE	WRITE	READ	W_R	R_W_R	D_VOID	ON_OFF	DATA_SIZE
+10	Read Part Number	Read	0	1	0	0	0	0	32
+11	Read Serial Number	Read	0	1	0	0	0	0	32
+12	Read F/W & Module Version	Read	0	1	0	0	0	0	16
+13	Read Status Byte	Read	0	1	0	0	0	0	16
+14	Read Temperature	Read	0	1	0	0	0	0	12
+20	Send Break Command	Void	0	0	0	0	1	0	0
+21	Clear FIFO	Void	0	0	0	0	1	0	0
+22	Event Mode Toggle	On/Off	0	0	0	0	0	1	0
+23	Event Threshold	R/W	1	1	1	1	0	0	10
+24	GPIO Mode	R/W	1	1	1	1	0	0	3
+25	Clock Frequency	R/W	1	1	1	1	0	0	3
+26	Setup Storage	On/Off	0	0	0	0	0	1	0
+27	Peaking Time	R/W	1	1	1	1	0	0	3
+28	Self Test	R/W	1	1	1	1	0	0	16
+30	Channel Number	R/W	1	1	1	1	0	0	5
+31	Enable/Disable Channel	R/W	1	1	1	1	0	0	1
+40	Address Pointer	R/W	1	1	1	1	0	0	11
+41	RAM Read/Write	R/W	1	1	1	1	0	0	8
+42	EEPROM Checksum	Read	0	1	0	0	0	0	8
+43	Hold On/Off	On/Off	0	0	0	0	0	1	0
+44	Emulator Mode	R/W	1	1	1	1	0	0	2
+45	Write Protect Signal	On/Off	0	0	0	0	0	1	0
