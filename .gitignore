@@ -1,3 +1,8 @@
 /pythonCodes/__pycache__
 /Datadump/fits
+<<<<<<< HEAD
 /Datadump/csv
+=======
+/Datadump/csv
+/builds/
+>>>>>>> master
