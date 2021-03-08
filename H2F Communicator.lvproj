@@ -14,8 +14,89 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="H2F Communicator" Type="Folder" URL="..">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
+		<Item Name="H2F Communicator" Type="Folder">
+			<Item Name="Database" Type="Folder">
+				<Item Name="Dictionary Commands.txt" Type="Document" URL="../Database/Dictionary Commands.txt"/>
+				<Item Name="Dictionary Commands.xlsx" Type="Document" URL="../Database/Dictionary Commands.xlsx"/>
+			</Item>
+			<Item Name="Icon" Type="Folder">
+				<Item Name="owl.ico" Type="Document" URL="../Icon/owl.ico"/>
+			</Item>
+			<Item Name="libs" Type="Folder">
+				<Item Name="sharedVars.lvlib" Type="Library" URL="../libs/sharedVars.lvlib"/>
+			</Item>
+			<Item Name="pythonCodes" Type="Folder">
+				<Item Name="__pycache__" Type="Folder">
+					<Item Name="convertFITS.cpython-39.pyc" Type="Document" URL="../pythonCodes/__pycache__/convertFITS.cpython-39.pyc"/>
+				</Item>
+				<Item Name="convertFITS.py" Type="Document" URL="../pythonCodes/convertFITS.py"/>
+			</Item>
+			<Item Name="SubVI" Type="Folder">
+				<Item Name="addRemDisList.vi" Type="VI" URL="../SubVI/addRemDisList.vi"/>
+				<Item Name="buildFrame.vi" Type="VI" URL="../SubVI/buildFrame.vi"/>
+				<Item Name="changeEXT.vi" Type="VI" URL="../SubVI/changeEXT.vi"/>
+				<Item Name="chkEmptyWrite.vi" Type="VI" URL="../SubVI/chkEmptyWrite.vi"/>
+				<Item Name="chkEvntSet.vi" Type="VI" URL="../SubVI/chkEvntSet.vi"/>
+				<Item Name="convertFITS.vi" Type="VI" URL="../SubVI/convertFITS.vi"/>
+				<Item Name="csvBitWrite.vi" Type="VI" URL="../SubVI/csvBitWrite.vi"/>
+				<Item Name="csvFormatter.vi" Type="VI" URL="../SubVI/csvFormatter.vi"/>
+				<Item Name="csvHeaderGen.vi" Type="VI" URL="../SubVI/csvHeaderGen.vi"/>
+				<Item Name="csvNameGenerate.vi" Type="VI" URL="../SubVI/csvNameGenerate.vi"/>
+				<Item Name="dataSplitter.vi" Type="VI" URL="../SubVI/dataSplitter.vi"/>
+				<Item Name="disableGrey.vi" Type="VI" URL="../SubVI/disableGrey.vi"/>
+				<Item Name="frameBifurcate.vi" Type="VI" URL="../SubVI/frameBifurcate.vi"/>
+				<Item Name="getDictDetails.vi" Type="VI" URL="../SubVI/getDictDetails.vi"/>
+				<Item Name="getDictDetailsTxt.vi" Type="VI" URL="../SubVI/getDictDetailsTxt.vi"/>
+				<Item Name="getThreshConv.vi" Type="VI" URL="../SubVI/getThreshConv.vi"/>
+				<Item Name="hexStrConv.vi" Type="VI" URL="../SubVI/hexStrConv.vi"/>
+				<Item Name="mapEventCounts.vi" Type="VI" URL="../SubVI/mapEventCounts.vi"/>
+				<Item Name="mapTo2DArr.vi" Type="VI" URL="../SubVI/mapTo2DArr.vi"/>
+				<Item Name="noToChar.vi" Type="VI" URL="../SubVI/noToChar.vi"/>
+				<Item Name="noToCoord.vi" Type="VI" URL="../SubVI/noToCoord.vi"/>
+				<Item Name="outDictSel.vi" Type="VI" URL="../SubVI/outDictSel.vi"/>
+				<Item Name="outFrame.vi" Type="VI" URL="../SubVI/outFrame.vi"/>
+				<Item Name="outSensSel.vi" Type="VI" URL="../SubVI/outSensSel.vi"/>
+				<Item Name="pixStatusConvert.vi" Type="VI" URL="../SubVI/pixStatusConvert.vi"/>
+				<Item Name="pixToStr.vi" Type="VI" URL="../SubVI/pixToStr.vi"/>
+				<Item Name="respCleaner.vi" Type="VI" URL="../SubVI/respCleaner.vi"/>
+				<Item Name="RWRHandling.vi" Type="VI" URL="../SubVI/RWRHandling.vi"/>
+				<Item Name="RWRHandling_TCP.vi" Type="VI" URL="../SubVI/RWRHandling_TCP.vi"/>
+				<Item Name="sort2DArrayAscDesc.vi" Type="VI" URL="../SubVI/sort2DArrayAscDesc.vi"/>
+				<Item Name="splitEveData.vi" Type="VI" URL="../SubVI/splitEveData.vi"/>
+				<Item Name="TCPSendRec.vi" Type="VI" URL="../SubVI/TCPSendRec.vi"/>
+				<Item Name="threshConvert.vi" Type="VI" URL="../SubVI/threshConvert.vi"/>
+				<Item Name="toBoolean.vi" Type="VI" URL="../SubVI/toBoolean.vi"/>
+				<Item Name="toEnum.vi" Type="VI" URL="../SubVI/toEnum.vi"/>
+				<Item Name="UARTSendRec.vi" Type="VI" URL="../SubVI/UARTSendRec.vi"/>
+			</Item>
+			<Item Name="testVI" Type="Folder">
+				<Item Name="cleaner.vi" Type="VI" URL="../testVI/cleaner.vi"/>
+				<Item Name="eveDataConverter.vi" Type="VI" URL="../testVI/eveDataConverter.vi"/>
+				<Item Name="Serial Write and Read.vi" Type="VI" URL="../testVI/Serial Write and Read.vi"/>
+				<Item Name="test.vi" Type="VI" URL="../testVI/test.vi"/>
+			</Item>
+			<Item Name="TypeDefs" Type="Folder">
+				<Item Name="dictCluster.ctl" Type="VI" URL="../TypeDefs/dictCluster.ctl"/>
+				<Item Name="pixArrSmol.ctl" Type="VI" URL="../TypeDefs/pixArrSmol.ctl"/>
+				<Item Name="pixelArray.ctl" Type="VI" URL="../TypeDefs/pixelArray.ctl"/>
+				<Item Name="recDataClust.ctl" Type="VI" URL="../TypeDefs/recDataClust.ctl"/>
+				<Item Name="RWRPrompt.vi" Type="VI" URL="../TypeDefs/RWRPrompt.vi"/>
+				<Item Name="serialSettings_Global.vi" Type="VI" URL="../TypeDefs/serialSettings_Global.vi"/>
+				<Item Name="TCPSettings_Global.vi" Type="VI" URL="../TypeDefs/TCPSettings_Global.vi"/>
+				<Item Name="testpixelArray.ctl" Type="VI" URL="../TypeDefs/testpixelArray.ctl"/>
+			</Item>
+			<Item Name="UI" Type="Folder">
+				<Item Name="allDictPage.vi" Type="VI" URL="../UI/allDictPage.vi"/>
+				<Item Name="allSettings.vi" Type="VI" URL="../UI/allSettings.vi"/>
+				<Item Name="commSettings.vi" Type="VI" URL="../UI/commSettings.vi"/>
+				<Item Name="eventMode.vi" Type="VI" URL="../UI/eventMode.vi"/>
+				<Item Name="mainUI.vi" Type="VI" URL="../UI/mainUI.vi"/>
+			</Item>
+			<Item Name=".gitignore" Type="Document" URL="../.gitignore"/>
+			<Item Name="d" Type="Document" URL="../d"/>
+			<Item Name="H2F Communicator.aliases" Type="Document" URL="../H2F Communicator.aliases"/>
+			<Item Name="H2F Communicator.lvlps" Type="Document" URL="../H2F Communicator.lvlps"/>
+			<Item Name="README.md" Type="Document" URL="../README.md"/>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -30,6 +111,7 @@
 				<Item Name="3DMathPlot Ctrl Act Queue.ctl" Type="VI" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Plot/Action String/3DMathPlot Ctrl Act Queue.ctl"/>
 				<Item Name="3DMathPlot State Class.ctl" Type="VI" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Plot/Action String/3DMathPlot State Class.ctl"/>
 				<Item Name="Add State(s) to Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__JKI_lib_State_Machine.vi"/>
+				<Item Name="Assert Block Data Type.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/TypeAssert/Assert Block Data Type.vim"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
@@ -63,6 +145,7 @@
 				<Item Name="High Resolution Relative Seconds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/High Resolution Relative Seconds.vi"/>
 				<Item Name="imagedata.ctl" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/imagedata.ctl"/>
 				<Item Name="Internecine Avoider.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/Internecine Avoider.vi"/>
+				<Item Name="Is Value Changed.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/Is Value Changed.vim"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LV3DPointTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LV3DPointTypeDef.ctl"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
@@ -83,7 +166,6 @@
 				<Item Name="Read Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet.vi"/>
 				<Item Name="Read File+ (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read File+ (string).vi"/>
 				<Item Name="Read Lines From File (with error IO).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Lines From File (with error IO).vi"/>
-				<Item Name="Remove Duplicates From 1D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Remove Duplicates From 1D Array.vim"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Set Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Busy.vi"/>
@@ -92,7 +174,11 @@
 				<Item Name="Set Cursor.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
+				<Item Name="Sort 2D Array - Pop Stack.vi" Type="VI" URL="/&lt;vilib&gt;/Array/Sort 2D Array - Pop Stack.vi"/>
+				<Item Name="Sort 2D Array - Push Stack.vi" Type="VI" URL="/&lt;vilib&gt;/Array/Sort 2D Array - Push Stack.vi"/>
+				<Item Name="Sort 2D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Sort 2D Array.vim"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
+				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="TCP Listen Internal List.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/TCP Listen Internal List.vi"/>
 				<Item Name="TCP Listen List Operations.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/TCP Listen List Operations.ctl"/>
