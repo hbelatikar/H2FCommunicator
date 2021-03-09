@@ -71,6 +71,7 @@
 			</Item>
 			<Item Name="testVI" Type="Folder">
 				<Item Name="cleaner.vi" Type="VI" URL="../testVI/cleaner.vi"/>
+				<Item Name="csvFileExplorer.vi" Type="VI" URL="../testVI/csvFileExplorer.vi"/>
 				<Item Name="eveDataConverter.vi" Type="VI" URL="../testVI/eveDataConverter.vi"/>
 				<Item Name="Serial Write and Read.vi" Type="VI" URL="../testVI/Serial Write and Read.vi"/>
 				<Item Name="test.vi" Type="VI" URL="../testVI/test.vi"/>
