@@ -99,6 +99,8 @@
 			<Item Name="H2F Communicator.lvlps" Type="Document" URL="../H2F Communicator.lvlps"/>
 			<Item Name="README.md" Type="Document" URL="../README.md"/>
 		</Item>
+		<Item Name="channelGraphs.vi" Type="VI" URL="../SubVI/channelGraphs.vi"/>
+		<Item Name="csvCleaner.vi" Type="VI" URL="../SubVI/csvCleaner.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="3D Plot Datatype.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Plot/3D Plot Datatype/3D Plot Datatype.lvclass"/>
