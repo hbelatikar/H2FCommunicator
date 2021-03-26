@@ -35,15 +35,18 @@
 				<Item Name="addRemDisList.vi" Type="VI" URL="../SubVI/addRemDisList.vi"/>
 				<Item Name="buildFrame.vi" Type="VI" URL="../SubVI/buildFrame.vi"/>
 				<Item Name="changeEXT.vi" Type="VI" URL="../SubVI/changeEXT.vi"/>
+				<Item Name="channelGraphs.vi" Type="VI" URL="../SubVI/channelGraphs.vi"/>
 				<Item Name="chkEmptyWrite.vi" Type="VI" URL="../SubVI/chkEmptyWrite.vi"/>
 				<Item Name="chkEvntSet.vi" Type="VI" URL="../SubVI/chkEvntSet.vi"/>
 				<Item Name="convertFITS.vi" Type="VI" URL="../SubVI/convertFITS.vi"/>
 				<Item Name="csvBitWrite.vi" Type="VI" URL="../SubVI/csvBitWrite.vi"/>
+				<Item Name="csvCleaner.vi" Type="VI" URL="../SubVI/csvCleaner.vi"/>
 				<Item Name="csvFormatter.vi" Type="VI" URL="../SubVI/csvFormatter.vi"/>
 				<Item Name="csvHeaderGen.vi" Type="VI" URL="../SubVI/csvHeaderGen.vi"/>
 				<Item Name="csvNameGenerate.vi" Type="VI" URL="../SubVI/csvNameGenerate.vi"/>
 				<Item Name="dataSplitter.vi" Type="VI" URL="../SubVI/dataSplitter.vi"/>
 				<Item Name="disableGrey.vi" Type="VI" URL="../SubVI/disableGrey.vi"/>
+				<Item Name="energyGraph.vi" Type="VI" URL="../SubVI/energyGraph.vi"/>
 				<Item Name="frameBifurcate.vi" Type="VI" URL="../SubVI/frameBifurcate.vi"/>
 				<Item Name="getDictDetails.vi" Type="VI" URL="../SubVI/getDictDetails.vi"/>
 				<Item Name="getDictDetailsTxt.vi" Type="VI" URL="../SubVI/getDictDetailsTxt.vi"/>
@@ -99,8 +102,6 @@
 			<Item Name="H2F Communicator.lvlps" Type="Document" URL="../H2F Communicator.lvlps"/>
 			<Item Name="README.md" Type="Document" URL="../README.md"/>
 		</Item>
-		<Item Name="channelGraphs.vi" Type="VI" URL="../SubVI/channelGraphs.vi"/>
-		<Item Name="csvCleaner.vi" Type="VI" URL="../SubVI/csvCleaner.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="3D Plot Datatype.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Plot/3D Plot Datatype/3D Plot Datatype.lvclass"/>
