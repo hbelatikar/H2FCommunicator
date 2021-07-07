@@ -4,5 +4,7 @@
 /Datadump/csv
 =======
 /Datadump/csv
+UI/Datadump/*
+/Datadump/
 /builds/
 >>>>>>> master
