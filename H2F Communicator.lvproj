@@ -33,6 +33,7 @@
 			</Item>
 			<Item Name="SubVI" Type="Folder">
 				<Item Name="addRemDisList.vi" Type="VI" URL="../SubVI/addRemDisList.vi"/>
+				<Item Name="addStatesToQueue.vi" Type="VI" URL="../SubVI/addStatesToQueue.vi"/>
 				<Item Name="buildFrame.vi" Type="VI" URL="../SubVI/buildFrame.vi"/>
 				<Item Name="changeEXT.vi" Type="VI" URL="../SubVI/changeEXT.vi"/>
 				<Item Name="channelGraphs.vi" Type="VI" URL="../SubVI/channelGraphs.vi"/>
@@ -59,6 +60,7 @@
 				<Item Name="outDictSel.vi" Type="VI" URL="../SubVI/outDictSel.vi"/>
 				<Item Name="outFrame.vi" Type="VI" URL="../SubVI/outFrame.vi"/>
 				<Item Name="outSensSel.vi" Type="VI" URL="../SubVI/outSensSel.vi"/>
+				<Item Name="parseStateQueue.vi" Type="VI" URL="../SubVI/parseStateQueue.vi"/>
 				<Item Name="pixStatusConvert.vi" Type="VI" URL="../SubVI/pixStatusConvert.vi"/>
 				<Item Name="pixToStr.vi" Type="VI" URL="../SubVI/pixToStr.vi"/>
 				<Item Name="respCleaner.vi" Type="VI" URL="../SubVI/respCleaner.vi"/>
@@ -114,7 +116,6 @@
 				<Item Name="3DMathPlot Ctrl Act Cluster.ctl" Type="VI" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Plot/Action String/3DMathPlot Ctrl Act Cluster.ctl"/>
 				<Item Name="3DMathPlot Ctrl Act Queue.ctl" Type="VI" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Plot/Action String/3DMathPlot Ctrl Act Queue.ctl"/>
 				<Item Name="3DMathPlot State Class.ctl" Type="VI" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Plot/Action String/3DMathPlot State Class.ctl"/>
-				<Item Name="Add State(s) to Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__JKI_lib_State_Machine.vi"/>
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="Assert Block Data Type.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/TypeAssert/Assert Block Data Type.vim"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
@@ -164,7 +165,6 @@
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Open File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Open File+.vi"/>
-				<Item Name="Parse State Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Parse State Queue__JKI_lib_State_Machine.vi"/>
 				<Item Name="Read Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (DBL).vi"/>
 				<Item Name="Read Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (I64).vi"/>
 				<Item Name="Read Delimited Spreadsheet (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (string).vi"/>
