@@ -4,6 +4,7 @@ Host to FPGA (H2F) Communicator
 This document contains information regarding the H2F Communicator. The H2F communicator provides an user interface to send commands and triggers to the FPGA so as to collect event data and configure the CZT detector. This software is developed using the LabVIEW 2019 professional development system.
 # Project Overview
 H2F communicator is a part of the STC Compton Imaging experiment at IIT-Bombay. The project aims to triangulate a X-ray source by using two CZT detectors. The CZT detectors provide event energy readout which is collected by a FPGA and sent to the H2F communicator user interface.
+
 # Hardware Overview
 The H2F communicator requires the following hardware to communicate with the FPGA:
 1. Computer with USB port
@@ -12,13 +13,13 @@ The H2F communicator requires the following hardware to communicate with the FPG
 # Software User Interface 
 The **eventMode.vi** file contains the user interface to communicate with the FPGA over UART. This VI also contains the commonly used commands required to configure the detector and perform the Event mode data collection.
 
-
+![LabVIEW User Interface](/Documentation/imgs/UI.png)
 
 ## Modules Description
 ### Event Mode Test
 This module deals with the configuration and commencement of the event mode test. Pressing the start button sends the command “0xA0FF55” to the FPGA to start the event mode. 
 
-![LabVIEW User Interface](/Documentation/imgs/eve.png)
+![Event Mode Test Interface](/Documentation/imgs/eveTest.png)
 
 #### User Controlled Fields
 The following data must be provided to start the test.
@@ -41,12 +42,12 @@ The following data must be provided to enable or disable a pixel:
 - **Pixel Number (Choose Pixel):** The user needs to provide a pixel number to turn on or off. After successful modification of the pixel status, the disabled pixels are added to a list which is inserted into the FITS file Headers.
 #### Software Process Flow
 An enabled pixel can be disabled by choosing or inserting the pixel number in the “Choose Pixel” number box, after which the user has to click on the “Pix Off” button to initiate the Pixel disabling process. Similarly, to enable a disabled pixel the user has to select the pixel and click the “Pix On” button to initiate the enabling process shown below. The user can also update the Pixel matrix on the User interface by clicking on the “Update All” button. This command updates the current pixel status on the Matrix.
-
+![Event Mode Test Flow](/Documentation/imgs/eveFlow.png)
 
 ### Energy Threshold Settings
 This module sets the energy threshold (also referred to as LLD) on the CZT detector. Selecting a threshold value updates the setting for both the detectors.
 
-
+![Energy Threshold Interface](/Documentation/imgs/thresh.png)
 
 #### User Controlled Fields
 The following data must be provided to set the energy threshold:
@@ -54,21 +55,21 @@ The following data must be provided to set the energy threshold:
 - **Threshold Value (Select Threshold Value):** The user needs to select a threshold value between 20KeV and 200KeV. The threshold value can be set using the slider or by inserting a value in the number box. The threshold value is appended to the FITS and CSV file name if an event test is performed. The threshold value is also inserted into the Header data units of the FITS file.
 #### Software Process Flow
 The user should select the appropriate threshold value to set using the slider or by inserting a value into the number box. After which the user should click on the set button to initiate the process of setting the threshold value.
+![Energy Threshold Flow](/Documentation/imgs/thresh.png)
 
 ### Set CZT Clock
 This module enables the user to set the CZT clock. The clock can be set to 10 MHz, 15 MHz, 20 MHz, 25 MHz and 30 MHz. Selecting a clock value updates this setting for both the clocks.
-
+![Clock Interface](/Documentation/imgs/clk.png)
 #### User Controlled Fields
 - **Clock Frequency:** The user has to set the clock frequency as per the provided clock frequency. The user can set the clock frequency at 10 MHz, 15 MHz, 20 MHz, 25 MHz and 30 MHz only using the enum control. 
 #### Software Process Flow
 The user has to select the appropriate clock frequency and press the set button to initiate the process.
-
+![Clock Interface Flow](/Documentation/imgs/clkFlow.png)
 ### Read Serial Number
 This module allows the user to read the serial number of the CZT detectors. The module also checks if the user provided serial number is the same as the one acquired from the detector.
-
+![Serial Read Interface](/Documentation/imgs/ser.png)
 ### User Controlled Fields
 - **Enter CZT 1 Serial Number:** The user should provide the serial number of the first detector to confirm the serial number. The serial number is appended to the event test file name. The serial number is also written into the FITS HDU file.
 - **Enter CZT 2 Serial Number:** The user should provide the serial number of the second detector to confirm the serial number. The serial number is appended to the event test file name. The serial number is also written into the FITS HDU file.
 #### Software Process Flow
-
-
+![Serial Read Flow](/Documentation/imgs/serFlow.png)
