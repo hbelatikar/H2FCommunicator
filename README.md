@@ -12,7 +12,6 @@ The H2F communicator requires the following hardware to communicate with the FPG
 # Software User Interface 
 The **eventMode.vi** file contains the user interface to communicate with the FPGA over UART. This VI also contains the commonly used commands required to configure the detector and perform the Event mode data collection.
 
-
 ## Modules Description
 ### Event Mode Test
 This module deals with the configuration and commencement of the event mode test. Pressing the start button sends the command “0xA0FF55” to the FPGA to start the event mode. 
